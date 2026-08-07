@@ -1,4 +1,4 @@
-// Drive Weekly — copy lives here, spec-sheet declarative register throughout.
+// Continuum Hyper — copy lives here, spec-sheet declarative register throughout.
 // Measured claims, units, conditions. No "elevate," "seamless," "unlock," "supercharge."
 
 export type Issue = {

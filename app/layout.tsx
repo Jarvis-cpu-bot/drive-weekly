@@ -14,23 +14,25 @@ const titilliumWeb = Titillium_Web({
   weight: ["400", "600", "700"],
 });
 
-const title = "Drive Weekly — spec-sheet EV reporting, every Thursday";
+const title = "Continuum Hyper — spec-sheet EV reporting, every Thursday";
 const description =
   "Range figures, charge curves, and battery data for EV buyers who read past the press release. Measured, not marketed. Every Thursday.";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://continuumhyper.info"),
   title,
   description,
   openGraph: {
-    title: "Drive Weekly",
+    title: "Continuum Hyper",
     description,
     type: "website",
-    siteName: "Drive Weekly",
+    siteName: "Continuum Hyper",
+    url: "https://continuumhyper.info",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Drive Weekly",
+    title: "Continuum Hyper",
     description,
   },
 };
