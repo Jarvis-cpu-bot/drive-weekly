@@ -1,0 +1,135 @@
+@import "tailwindcss";
+
+:root {
+  /* Daylight asphalt — dry, cool-grey ground read in daylight, like a car is.
+     Not the near-black platform-dark this build was deliberately moved off. */
+  --asphalt: #dce0e3;
+  --asphalt-raised: #eceeef;
+  --asphalt-sunken: #cbd0d4;
+  --ink: #161a1d;
+  --ink-dim: #495056;
+  --charge-blue: #1b4fd8;
+  --charge-blue-bright: #2f63f0;
+  --rapid-orange: #e8590c;
+  --rapid-orange-bright: #ff6a1f;
+  --rule: #b7bec3;
+  --success: #146c43;
+
+  --bg: var(--asphalt);
+  --bg-raised: var(--asphalt-raised);
+  --bg-sunken: var(--asphalt-sunken);
+  --accent: var(--charge-blue);
+  --accent-bright: var(--charge-blue-bright);
+  --accent-ink: #f4f6f7;
+  --warn: var(--rapid-orange);
+  --warn-bright: var(--rapid-orange-bright);
+  --focus: var(--charge-blue);
+}
+
+/* Designed second palette: a real EV dashboard at night, not asphalt inverted.
+   Deep instrument-cluster blue-black ground, orange stays the warning/rapid colour,
+   charge-blue lifts to stay legible on dark. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #14181c;
+    --bg-raised: #1c2126;
+    --bg-sunken: #0d1013;
+    --ink: #e7eaec;
+    --ink-dim: #9aa3aa;
+    --accent: #5b86ff;
+    --accent-bright: #7a9dff;
+    --accent-ink: #0d1013;
+    --warn: #ff7a33;
+    --warn-bright: #ff8f52;
+    --rule: #2c333a;
+    --success: #3ecf7e;
+    --focus: #5b86ff;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #14181c;
+  --bg-raised: #1c2126;
+  --bg-sunken: #0d1013;
+  --ink: #e7eaec;
+  --ink-dim: #9aa3aa;
+  --accent: #5b86ff;
+  --accent-bright: #7a9dff;
+  --accent-ink: #0d1013;
+  --warn: #ff7a33;
+  --warn-bright: #ff8f52;
+  --rule: #2c333a;
+  --success: #3ecf7e;
+  --focus: #5b86ff;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-bg-raised: var(--bg-raised);
+  --color-bg-sunken: var(--bg-sunken);
+  --color-ink: var(--ink);
+  --color-ink-dim: var(--ink-dim);
+  --color-accent: var(--accent);
+  --color-accent-bright: var(--accent-bright);
+  --color-accent-ink: var(--accent-ink);
+  --color-warn: var(--warn);
+  --color-warn-bright: var(--warn-bright);
+  --color-rule: var(--rule);
+  --color-success: var(--success);
+  --color-focus: var(--focus);
+  --color-asphalt: var(--asphalt);
+  /* Fixed dark chrome, intentionally NOT swapping with light/dark mode: the
+     charge-curve gauge and the closing dark band both stay dark in both palettes. */
+  --color-gauge: #10141a;
+  --color-gauge-ink: #e7eaec;
+  --color-gauge-raised: #1a1f26;
+
+  --font-display: var(--font-chakra);
+  --font-body: var(--font-titillium);
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: light;
+}
+html[data-theme="dark"] {
+  color-scheme: dark;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.font-display {
+  font-family: var(--font-display), "Arial Narrow", sans-serif;
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
