@@ -65,8 +65,8 @@ export default function EmailPreview() {
                 />
                 <div>
                   <p className="text-sm font-semibold text-[#1c2024]">
-                    Continuum Hyper{" "}
-                    <span className="font-normal text-[#697077]">&lt;desk@continuumhyper.info&gt;</span>
+                    Wavelength Flowmatic{" "}
+                    <span className="font-normal text-[#697077]">&lt;desk@wavelengthflowmatic.info&gt;</span>
                   </p>
                   <p className="mt-0.5 text-sm text-[#33383c]">
                     800V stopped being a spec-sheet flex. Here&apos;s the charge-curve proof.
@@ -102,7 +102,7 @@ export default function EmailPreview() {
             <p className="mt-3">
               — Priya
               <br />
-              <span className="text-[#697077]">Editor, Continuum Hyper</span>
+              <span className="text-[#697077]">Editor, Wavelength Flowmatic</span>
             </p>
           </div>
         </div>

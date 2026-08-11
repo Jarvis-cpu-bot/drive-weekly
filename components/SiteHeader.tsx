@@ -5,7 +5,7 @@ export default function SiteHeader() {
     <header className="sticky top-0 z-40 border-b border-rule/60 bg-bg/92 backdrop-blur-sm">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4 sm:px-8">
         <a href="#top" className="font-display text-lg font-bold uppercase tracking-tight text-ink sm:text-xl">
-          Continuum Hyper
+          Wavelength Flowmatic
         </a>
         <nav aria-label="Primary" className="hidden items-center gap-7 text-sm text-ink-dim sm:flex">
           <a href="#range" className="transition-colors hover:text-ink">

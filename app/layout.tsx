@@ -14,25 +14,25 @@ const titilliumWeb = Titillium_Web({
   weight: ["400", "600", "700"],
 });
 
-const title = "Continuum Hyper — spec-sheet EV reporting, every Thursday";
+const title = "Wavelength Flowmatic — spec-sheet EV reporting, every Thursday";
 const description =
   "Range figures, charge curves, and battery data for EV buyers who read past the press release. Measured, not marketed. Every Thursday.";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://continuumhyper.info"),
+  metadataBase: new URL("https://wavelengthflowmatic.info"),
   title,
   description,
   openGraph: {
-    title: "Continuum Hyper",
+    title: "Wavelength Flowmatic",
     description,
     type: "website",
-    siteName: "Continuum Hyper",
-    url: "https://continuumhyper.info",
+    siteName: "Wavelength Flowmatic",
+    url: "https://wavelengthflowmatic.info",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Continuum Hyper",
+    title: "Wavelength Flowmatic",
     description,
   },
 };

@@ -1,4 +1,4 @@
-// Continuum Hyper — copy lives here, spec-sheet declarative register throughout.
+// Wavelength Flowmatic — copy lives here, spec-sheet declarative register throughout.
 // Measured claims, units, conditions. No "elevate," "seamless," "unlock," "supercharge."
 
 export type Issue = {
